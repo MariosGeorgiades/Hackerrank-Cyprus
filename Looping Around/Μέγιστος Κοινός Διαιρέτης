@@ -1,0 +1,33 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+int a,b;
+cin>>a>>b;
+int maxi=0;
+int mini=0;
+int m=0;
+if(a>b)
+{
+maxi=a;
+mini=b;
+}
+else{
+maxi=b;
+mini=a;
+}
+for(int i=1;i<=mini;i++)
+{
+if((mini%i==0) && (maxi%i==0))
+{
+m=i;
+}
+}
+cout<<m;
+return 0;
+}
