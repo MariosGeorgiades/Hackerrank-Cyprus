@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+int v,ans=0;
+cin >> v;
+for(int i=1; i<=v; i++)
+for(int j=i; j<=1000; j++)
+for(int k=j; k<=1000; k++)
+if(i*j*k==v) {
+ans++;
+}
+cout << ans;
+return 0;
+}
