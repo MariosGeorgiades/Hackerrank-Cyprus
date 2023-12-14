@@ -1,0 +1,22 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+int x,y;
+cin >> x >> y;
+for (int i=1; i<=x; i++)
+{
+if (i%2==1)
+y*=2;
+else
+y+=1;
+
+}
+cout <<y;
+return 0;
+}
