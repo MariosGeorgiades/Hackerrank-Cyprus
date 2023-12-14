@@ -1,0 +1,22 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <iomanip>
+using namespace std;
+
+
+int main() {
+int n;
+int dieretis=1;
+double tot=0.0;
+cin >> n;
+for (int i=1;i<=n;i++)
+{
+tot+=1.0/dieretis;
+dieretis*=3;
+}
+cout<<fixed<<setprecision(10)<<tot;
+return 0;
+}
