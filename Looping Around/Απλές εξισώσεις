@@ -1,0 +1,21 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+int a,b,c;
+cin >> a >> b >> c;
+bool found = false;
+for(int x=-100; x<=100; x++)
+for(int y=x+1; y<=100; y++)
+for(int z=y+1; z<=100; z++)
+if(x+y+z==a && x*y*z==b && x*x+y*y+z*z==c) {
+cout << x << " " << y << " " << z;
+found = true;
+}
+if(found==false)
+cout << "-1";
+return 0;
+}
